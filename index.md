@@ -20,4 +20,17 @@ tags: This is a space-delimited list of tags you associate with your project or 
 level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Flagship)
 
 type: code, tool, documentation, or other
-# Top 10 Web Application Security Risks
+# Top 10 Desktop Application Security Risks
+
+| OWASP Top 10 Desktop App | Examples |
+|---|---|
+| DA1 | Injections |
+| DA2 | Broken Authentication |
+| DA3 | Sensitive Data Exposure |
+| DA4 | Insufficient Cryptography  |
+| DA5 | Improper Authorization |
+| DA6 | Security Misconfiguration |
+| DA7 | Insecure Communication |
+| DA8 | Poor Code Quality |
+| DA9 | Using Components with Known Vulnerabilities |
+| DA10 | Insufficient Logging & Monitoring |
