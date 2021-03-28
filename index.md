@@ -22,7 +22,7 @@ level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Fla
 type: code, tool, documentation, or other
 # Top 10 Desktop Application Security Risks
 
-[DA1](https://github.com/adventuretrail/www-project-desktop-app-security-top-10/edit/main/index.md#a)
+[DA1](#a)
 
 | OWASP Top 10 Desktop App | Examples |
 |---|---|
