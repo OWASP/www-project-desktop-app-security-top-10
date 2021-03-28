@@ -22,6 +22,8 @@ level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Fla
 type: code, tool, documentation, or other
 # Top 10 Desktop Application Security Risks
 
+[link]A(https://www.example.com/my%20great%20page)AB
+
 | OWASP Top 10 Desktop App | Examples |
 |---|---|
 | DA1 - Injections | SQLi, LDAP, XML, OS Command |
