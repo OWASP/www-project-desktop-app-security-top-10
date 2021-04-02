@@ -1,7 +1,7 @@
 ### Desktop App Security Top 10 Information
 * [Incubator Project](#)
 * [Type of Project](#)
-* [Version 0.0.0](#)
+* [Version 0.0.1](#)
 * [Builder](#)
 * [Breaker](#)
 
