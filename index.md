@@ -46,6 +46,8 @@ type: documentation
 | DA9 - Using Components with Known Vulnerabilities | Usage of Outdated Softwares, or Usage of Obsolete Components/Services of Windows/3rd Party vendors |
 | DA10 - Insufficient Logging & Monitoring | Missing or Improper Logging of Activities, Missing Regular Monitoring to Detect Abuse |
 
+<br>
+Note: These Top10 have been created keeping in mind Windows, *Nix platforms and using commonly available CVE, exploits, writeups.
 
 <br/><br/>
 ## [OWASP Top 10 Desktop Application Security Risks | Detailed Description](tab_detailed_DesktopTop10.md/#t2)
