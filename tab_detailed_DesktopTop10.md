@@ -88,9 +88,9 @@ It may end up in a successful unauthorized data access or entire system compromi
 
 
 ### Prevention:
-Industrial Standard recommendations like invalidating session upon inactivity, having short session life time, session entropy, etc. can prevent improper session management.
-In the case of external Authentication hardware (like RFID/USB key etc.) is being used, accepting a dynamic user challenge code in the form of PIN/password as 2nd factor of Authentication. So in case such a device is lost, it cannot be misused.
-Implementing proper Authentication across all of services/UI interface/shared drives etc. 
+* Industrial Standard recommendations like invalidating session upon inactivity, having short session life time, session entropy, etc. can prevent improper session management.
+* In the case of external Authentication hardware (like RFID/USB key etc.) is being used, accepting a dynamic user challenge code in the form of PIN/password as 2nd factor of Authentication. So in case such a device is lost, it cannot be misused.
+* Implementing proper Authentication across all of services/UI interface/shared drives etc. 
 
 
 
@@ -174,7 +174,6 @@ Improper authorization vulnerabilities will enable the attacker to escalate the 
 
 
 ### Prevention:
-* Preventing improper authorization issues may require
 * Configuring the application to run at the lowest possible privilege.
 * Avoiding setting setuid/setgid permission for the binary of the application.
 * Configuring the read/write permission for application directory or files of the application to the privileged or required user role only
@@ -206,7 +205,6 @@ Since a desktop may be used under multiple situations, it might need an user to 
 An attacker can bypass restrictions & hence run arbitrary code by abusing misconfigured features or even escalate privilege on the system running the target application.
 
 ### Prevention:
-Security misconfigurations can be prevented by using:
 * Named pipes with lowest possible privilege to carry out the communication and operation.
 * Hardened supporting background process & third-party services
 * Hardened/Defused file parser, File type/content validations
@@ -255,7 +253,6 @@ An attacker needs access to the binary or installer of the target application. S
 An attacker can reverse engineer the application and can glean information about the application logic, business proprietary logic, secrets used in the application. Bypass certain restrictions using run time debugging e.g. bypassing license check. It may also allow execution of malware in place of legitimate code or may help in privilege escalation.
 
 ### Prevention:
-Poor code quality can be remediated by:
 * Following secure coding practices, using SAST tools to detect security issues at an early stage of development
 * Removing unused, dead code, test environment details. Following best practice for code comment, clean code approach.
 * Using TPM/HSM or any other secure platforms to store the secrets, keys, etc.
@@ -289,9 +286,8 @@ It may also happen that there can be transitive dependencies, for instance in yo
 An attacker can exploit the publicly disclosed vulnerability in the OS offered/third party component in order to take over the system running the application, cause loss of data confidentiality/integrity or even may cause service unavailability depending upon the kind of exploit published.
 
 ### Prevention:
-To prevent the usage of components with known vulnerabilities, it is recommended to :
 * Use Proprietary components with the latest update/patch.
-* Use open source components which are actively maintained by the open source community
+* Only use open source components which are actively maintained by the open source community
 * Check for the disclosed vulnerabilities using vulnerability databases like NVD, MITRE, etc. periodically and apply stable patches upon release by the vendor.
 * Identifying SBOM (Software bill of materials) i.e. keeping track of all individual components being used within the product (while in the development phase itself), which can be handy when any exploit is published.
 
