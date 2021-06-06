@@ -23,9 +23,15 @@ level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Fla
 type: documentation
 
 -->
-# OWASP Top 10 Desktop Application Security Risks
 
+<!--
 [DA1](#a)
+-->
+
+
+# OWASP Top 10 Desktop Application Security Risks | Quick Reference Tabulation
+
+
 
 | OWASP Top 10 Desktop App | Examples |
 |---|---|
@@ -39,3 +45,8 @@ type: documentation
 | DA8 - Poor Code Quality | Missing Code-Signing and Verification for File Integrity, Missing Code Obfuscation, Dll-Preloading or Injection, Race Conditions, lack of binary protection (Overflows, Null pointers, memory corruption) etc.  |
 | DA9 - Using Components with Known Vulnerabilities | Usage of Outdated Softwares, or Usage of Obsolete Components/Services of Windows/3rd Party vendors |
 | DA10 - Insufficient Logging & Monitoring | Missing or Improper Logging of Activities, Missing Regular Monitoring to Detect Abuse |
+
+
+
+# [OWASP Top 10 Desktop Application Security Risks | Detailed Description](#t2)
+
