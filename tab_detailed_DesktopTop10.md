@@ -333,3 +333,8 @@ Logging allows us to track the operations performed within the context of the ap
 * Do not intake user supplied parameters inside logs, in case if required sanitize the input and only allow in predefined places.
 * Implement and configure robust alert/escalation mechanisms to detect the attacks.
 
+<br/><br/>
+
+## [OWASP Top 10 Desktop Application Security Risks | Quick Reference Table](index.md/#t1)
+
+<br/>
