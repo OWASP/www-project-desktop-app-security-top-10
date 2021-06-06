@@ -296,27 +296,27 @@ An attacker can exploit the publicly disclosed vulnerability in the OS offered/t
 ### Description:
 Logging of the user operations, background tasks, etc are considered as important aspects of any application. As it records all the activities performed within the context of the application. Logging enables the application to resolve runtime functional errors and monitor the activities of the user for auditing purposes. 
 There are different kinds of log such as 
-Application logs - Records functional or operational logs.
-Debug logs - Application generated logs used by developers of the application to debug the errors and runtime exceptions.
-Audit logs - Logs recording information of an event. Log entry consists of 
-Date and timestamp 
-Operation performed or resource accessed
-User who performed the operation
-Source & destination address of the operation.
+1. Application logs - Records functional or operational logs.
+2. Debug logs - Application generated logs used by developers of the application to debug the errors and runtime exceptions.
+3. Audit logs - Logs recording information of an event. Log entry consists of 
+	1. Date and timestamp 
+	2. Operation performed or resource accessed
+	3. User who performed the operation
+	4. Source & destination address of the operation.
 Only admin/designated users of the system/application must be authorized to configure and access logs.
+
 In addition, a monitoring mechanism will use logs and enable the owner of the application to receive alerts like:
-Identifying security attacks
-Identifying compliance violation
-Unusual behaviors such as authentication failures, authorization failures, input validation failures, etc.
+- Identifying security attacks
+- Identifying compliance violation
+- Unusual behaviors such as authentication failures, authorization failures, input validation failures, etc.
 
-
-Common Logging and Monitoring issues comprise of
-Many times developers, to understand what went wrong, put everything in logs which may log sensitive data such as PII, login credentials, encryption keys, tokens, etc.
-Storing logs in public folders with world read/writable permissions
-Non-admin users can access and update the audit logs.
-Using values supplied by the end-user within Audit trail e.g. IP address, username, timestamp, etc. from request are used. Or sometimes intaking parameters from the user, which can in turn inject values within the Audit trail, making it look like a legitimate entry.
-Absence of the monitoring mechanism.
-Insecure baseline configurations/rules for alerts.
+Common Logging and Monitoring issues comprise of:
+- Many times developers, to understand what went wrong, put everything in logs which may log sensitive data such as PII, login credentials, encryption keys, tokens, etc.
+- Storing logs in public folders with world read/writable permissions
+- Non-admin users can access and update the audit logs.
+- Using values supplied by the end-user within Audit trail e.g. IP address, username, timestamp, etc. from request are used. Or sometimes intaking parameters from the user, which can in turn inject values within the Audit trail, making it look like a legitimate entry.
+- Absence of the monitoring mechanism.
+- Insecure baseline configurations/rules for alerts.
 
 
 ### Exploitability Rational:
