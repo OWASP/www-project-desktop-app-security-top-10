@@ -1,4 +1,5 @@
-# OWASP Top 10 Desktop Application Security Risks | Brief
+# OWASP Top 10 Desktop Application Security Risks
+<br/>
 
 
 ### [DA1 - Injections](#da1)
@@ -64,10 +65,10 @@ Based upon sink, either it may end up into a successful privileged command execu
 
 
 ### Prevention:
-One of the quite common practices is to sanitize user input, considering all input as suspicious.
-Industrial Standard recommendation for SQL like usage of stored procedures / parameterized queries. 
-Avoiding user input getting into execution of system level commands.
-Using forms of encoding based upon where it is going to be used, can prevent injections.
+* One of the quite common practices is to sanitize user input, considering all input as suspicious.
+* Industrial Standard recommendation for SQL like usage of stored procedures / parameterized queries. 
+* Avoiding user input getting into execution of system level commands.
+* Using forms of encoding based upon where it is going to be used, can prevent injections.
 
 
 
@@ -115,11 +116,11 @@ It may end up in a successful unauthorized data access within a system or having
 
 
 ### Prevention:
-Industrial Standard recommendations like using drive/partition level encryption for *nix/Windows hosts and have application layer encryption with proper key management scheme in place. 
-Using a Password Based Key Derivation function can be a good solution here.
-Deriving Secured-Random numbers to generate keys on runtime/first time installation & there by avoiding hardcoding items. 
-If using a filesystem to save sensitive information, it needs to be done with proper role based access control plus properly implemented cryptography in place (Hashing, Salting, Encryption with Proper Key Management).
-For unauthorized person, preventing access to process memory and clearing memory immediately post session expiry.
+* Industrial Standard recommendations like using drive/partition level encryption for *nix/Windows hosts and have application layer encryption with proper key management scheme in place. 
+* Using a Password Based Key Derivation function can be a good solution here.
+* Deriving Secured-Random numbers to generate keys on runtime/first time installation & there by avoiding hardcoding items. 
+* If using a filesystem to save sensitive information, it needs to be done with proper role based access control plus properly implemented cryptography in place (Hashing, Salting, Encryption with Proper Key Management).
+* For unauthorized person, preventing access to process memory and clearing memory immediately post session expiry.
 
   
   
@@ -142,11 +143,11 @@ Primarily it may be a violation of data confidentiality or integrity, since via 
 
 
 ### Prevention:
-Using the latest and industrial standard Cryptographic algorithms and functions.
-Using Proper key length, avoiding weak keys, choosing proper mode of operation and salt value.
-Choosing Proper way of applying cryptographic functions, e.g. choosing hash functions for the need of 1 way data operations like password storage, choosing salt to prevent ready made dictionary attacks.
-Using Secure Random function to generate any value used by cryptographic functions like salt/IV/auto generated keys etc.
-Usage of hash/symmetric/asymmetric key crypto system where required i.e. in scenario of data integrity (i.e. code signing/CRC/HMAC) or Authentication (e.g. digital certificate/HMAC) or data confidentiality (e.g. HTTPS or encryption at rest)
+* Using the latest and industrial standard Cryptographic algorithms and functions.
+* Using Proper key length, avoiding weak keys, choosing proper mode of operation and salt value.
+* Choosing Proper way of applying cryptographic functions, e.g. choosing hash functions for the need of 1 way data operations like password storage, choosing salt to prevent ready made dictionary attacks.
+* Using Secure Random function to generate any value used by cryptographic functions like salt/IV/auto generated keys etc.
+* Usage of hash/symmetric/asymmetric key crypto system where required i.e. in scenario of data integrity (i.e. code signing/CRC/HMAC) or Authentication (e.g. digital certificate/HMAC) or data confidentiality (e.g. HTTPS or encryption at rest)
 
 
 
@@ -173,11 +174,11 @@ Improper authorization vulnerabilities will enable the attacker to escalate the 
 
 
 ### Prevention:
-Preventing improper authorization issues may require
-Configuring the application to run at the lowest possible privilege.
-Avoiding setting setuid/setgid permission for the binary of the application.
-Configuring the read/write permission for application directory or files of the application to the privileged or required user role only
-Restricting read/write access of the registry values / configuration / log files to the user required for the operation. 
+* Preventing improper authorization issues may require
+* Configuring the application to run at the lowest possible privilege.
+* Avoiding setting setuid/setgid permission for the binary of the application.
+* Configuring the read/write permission for application directory or files of the application to the privileged or required user role only
+* Restricting read/write access of the registry values / configuration / log files to the user required for the operation. 
 
 
 
@@ -205,11 +206,11 @@ Since a desktop may be used under multiple situations, it might need an user to 
 An attacker can bypass restrictions & hence run arbitrary code by abusing misconfigured features or even escalate privilege on the system running the target application.
 
 ### Prevention:
-Security misconfigurations can be prevented by using
-Named pipes with lowest possible privilege to carry out the communication and operation.
-Hardened supporting background process & third-party services
-Hardened/Defused file parser, File type/content validations
-Configuring proper firewall rules, group policies, registries, etc.
+Security misconfigurations can be prevented by using:
+* Named pipes with lowest possible privilege to carry out the communication and operation.
+* Hardened supporting background process & third-party services
+* Hardened/Defused file parser, File type/content validations
+* Configuring proper firewall rules, group policies, registries, etc.
 
 
 
@@ -227,12 +228,11 @@ An attacker can retrieve user credentials, service credentials, communication st
 
 
 ### Prevention:
-Risk of insecure communication can be mitigated by using secure version of the protocols such as
-HTTPS instead of HTTP, WSS instead of WS, SFTP instead of FTP, SSH instead of TELNET, etc.
-Disabling obsolete protocols and cipher-suits responsible for encrypted communication.
-Encrypted SQL connections
-Implementing tunnels for plaintext protocols for ex SSH tunnel, IPSec, etc.
-Using CA signed certificate and not using self signed certificate.
+* Risk of insecure communication can be mitigated by using secure version of the protocols such as HTTPS instead of HTTP, WSS instead of WS, SFTP instead of FTP, SSH instead of TELNET, etc.
+* Disabling obsolete protocols and cipher-suits responsible for encrypted communication.
+* Encrypted SQL connections
+* Implementing tunnels for plaintext protocols for ex SSH tunnel, IPSec, etc.
+* Using CA signed certificate and not using self signed certificate.
 
 
 
@@ -255,13 +255,13 @@ An attacker needs access to the binary or installer of the target application. S
 An attacker can reverse engineer the application and can glean information about the application logic, business proprietary logic, secrets used in the application. Bypass certain restrictions using run time debugging e.g. bypassing license check. It may also allow execution of malware in place of legitimate code or may help in privilege escalation.
 
 ### Prevention:
-Poor code quality can be remediated by
-Following secure coding practices, using SAST tools to detect security issues at an early stage of development
-Removing unused, dead code, test environment details. Following best practice for code comment, clean code approach.
-Using TPM/HSM or any other secure platforms to store the secrets, keys, etc.
-Obfuscating the code (however, this is considered as partial solution)
-Implementing protection mechanism via ASLR, DEP, validating length of data entering the buffers, preventing memory leaks, out of band leakage, etc.
-Implementing detection of code tampering via code signing and verification, detecting hooking of debuggers thereby preventing runtime debugging, etc.
+Poor code quality can be remediated by:
+* Following secure coding practices, using SAST tools to detect security issues at an early stage of development
+* Removing unused, dead code, test environment details. Following best practice for code comment, clean code approach.
+* Using TPM/HSM or any other secure platforms to store the secrets, keys, etc.
+* Obfuscating the code (however, this is considered as partial solution)
+* Implementing protection mechanism via ASLR, DEP, validating length of data entering the buffers, preventing memory leaks, out of band leakage, etc.
+* Implementing detection of code tampering via code signing and verification, detecting hooking of debuggers thereby preventing runtime debugging, etc.
 
 
 
@@ -289,11 +289,11 @@ It may also happen that there can be transitive dependencies, for instance in yo
 An attacker can exploit the publicly disclosed vulnerability in the OS offered/third party component in order to take over the system running the application, cause loss of data confidentiality/integrity or even may cause service unavailability depending upon the kind of exploit published.
 
 ### Prevention:
-To prevent the usage of components with known vulnerabilities, it is recommended to 
-Use Proprietary components with the latest update/patch.
-Use open source components which are actively maintained by the open source community
-Check for the disclosed vulnerabilities using vulnerability databases like NVD, MITRE, etc. periodically and apply stable patches upon release by the vendor.
-Identifying SBOM (Software bill of materials) i.e. keeping track of all individual components being used within the product (while in the development phase itself), which can be handy when any exploit is published.
+To prevent the usage of components with known vulnerabilities, it is recommended to :
+* Use Proprietary components with the latest update/patch.
+* Use open source components which are actively maintained by the open source community
+* Check for the disclosed vulnerabilities using vulnerability databases like NVD, MITRE, etc. periodically and apply stable patches upon release by the vendor.
+* Identifying SBOM (Software bill of materials) i.e. keeping track of all individual components being used within the product (while in the development phase itself), which can be handy when any exploit is published.
 
 
 
@@ -335,8 +335,8 @@ Since a desktop may be used under multiple situations, it might need an user to 
 Logging allows us to track the operations performed within the context of the application. It is very useful to detect/analyze any occurrence of the incident. Without a secure & robust logging mechanism, it will be easier for an attacker to manipulate the logs in order to cover tracks of the operation performed. Inappropriate or weak monitoring mechanisms will fail to detect an attack in real time and will not allow the owner of the application to take appropriate action to prevent the attack.
 
 ### Prevention:
-Avoid access to logs for common end users (neither read/write), unless required.
-Periodically monitor logs to identify suspicious activities.
-Do not intake user supplied parameters inside logs, in case if required sanitize the input and only allow in predefined places.
-Implement and configure robust alert/escalation mechanisms to detect the attacks.
+* Avoid access to logs for common end users (neither read/write), unless required.
+* Periodically monitor logs to identify suspicious activities.
+* Do not intake user supplied parameters inside logs, in case if required sanitize the input and only allow in predefined places.
+* Implement and configure robust alert/escalation mechanisms to detect the attacks.
 
