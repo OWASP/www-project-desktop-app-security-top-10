@@ -1,3 +1,6 @@
+# OWASP Top 10 Desktop Application Security Risks | Brief
+
+
 ### [DA1 - Injections](#da1)
 
 Issues such as SQL, LDAP, XML, OS command injection, etc. occur when untrusted input is passed to the interpreter as a part of a query/command. An attacker can trick interpreters to execute arbitrary commands to perform unwanted operations or gather unauthorized data.
@@ -46,6 +49,7 @@ Includes missing or insecure implementation of logs, improper parameters within 
 
 
 <br/><br/>
+# OWASP Top 10 Desktop Application Security Risks | Detailed
 ___
 # <a name="da1" > DA1 - Injections </a>
 ### Description:
@@ -193,7 +197,7 @@ Certain Windows applications rely on registry / group policies for security cont
 Sometimes few apps are configured to serve API, web access, network shares, services, etc. only within the same machine, despite being connected over the network via firewall or source IP filtering rules etc. Misconfigurations in them expose such interfaces over the network and increase attack surface.
 
  
-### Exploitability:
+### Exploitability Rational:
 Since a desktop may be used under multiple situations, it might need an user to login or sometimes a guest user like a public kiosk with physical access. Exploiting security misconfigurations can be simple sometimes, as it might be enforced only through obscurity. And sometimes it may also happen that the attacker can be a trusted insider.
 
 
@@ -215,7 +219,7 @@ Configuring proper firewall rules, group policies, registries, etc.
 When any Application needs to communicate with the remote services such as remote SQL servers, web services, file transfer, sending commands or any other process running on the remote server, but uses plaintext communication protocols to consume services, such vulnerabilities fall under Insecure Communication. Insecure communication issues include usage of plaintext communication protocols such as FTP, TELNET, HTTP, MQTT, WS, etc. or usage of weak TLS/DTLS cipher-suites/protocols, plaintext database connections, using self signed certificates for secure channel communication, etc. These flaws allow an attacker to perform Man-in-The-Middle (MiTM) attacks in order to sniff and manipulate the data of an active connection.
 
 
-### Exploitability:
+### Exploitability Rational:
 An attacker present within the network can access the communication via MiTM attack. If it is already unencrypted, it becomes easier to sniff confidential information or replay packets. Otherwise in case of weak encryption communication, an attacker can downgrade the connection and thereby sniff the traffic.
 
 ### Impact:
@@ -243,7 +247,7 @@ Unobfuscated code
 Missing code signing and verification
 
 
-### Exploitability:
+### Exploitability Rational:
 An attacker needs access to the binary or installer of the target application. Subject to the kind of language used i.e. managed or unmanaged, reverse engineering may yield either assembly level or original source code equivalent. And in absence of code integrity, it may allow an attacker to run arbitrary code.
 
 
@@ -277,7 +281,7 @@ These components are maintained by the third party vendors and updates are frequ
 
 Using any of the above kinds of components can introduce new vulnerabilities and attack surfaces. It is necessary for the developers of the application to patch the discovered vulnerability in the open source components and use the latest/patched version of commercial components.
 
-### Exploitability:
+### Exploitability Rational:
 An attacker needs to know the vulnerable component version, which is being used within the product, thereby allowing it to exploit based on the public available details.
 It may also happen that there can be transitive dependencies, for instance in your product ‘A’ you may be using 3rd party product/component ‘B’, in turn product ‘B’ uses another 3rd party product/component ‘C’. If a vulnerability within product ‘C’ is disclosed, by default product ‘A’ is vulnerable as it inherits via using component ‘B’.
 
@@ -323,7 +327,7 @@ Absence of the monitoring mechanism.
 Insecure baseline configurations/rules for alerts.
 
 
-### Exploitability:
+### Exploitability Rational:
 Since a desktop may be used under multiple situations, it might need an user to login or sometimes a guest user like a public kiosk with physical access.
 
 
