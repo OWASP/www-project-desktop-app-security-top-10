@@ -157,10 +157,10 @@ Primarily it may be a violation of data confidentiality or integrity, since via 
 ### Description:
 Authorization flaws include weak file/folder permission per user role, missing principle of least privilege approach, improper user roles, unauthorized registry or environment variables access, etc. Below are some most common vulnerabilities:
 
-Application or supporting services running on systems with higher privileges than required, such as root on *nix operating system and administrator on Windows operating system. If this service is compromised, an attacker directly gets full privilege access to the entire system.
-Binary of the application with setuid/setgid permission for *nix.
-Having an application directory with read/write access to low privileged users. For instance configuration files saved in public directories or configuration files with write access to other users (xx7) permissions on linux operating system or read-write-execute for everyone/non-admin in Windows. Similarly, executable files with write permission for low privileged users allows replacing legitimate files with malicious executable containing shellcode to perform privilege escalation. It might also happen that some sensitive information is saved within files and read permission instead of only admin, has been given to everyone.
-Having Write access to registry values used by applications on Windows operating systems for low privileged users. Sometimes apps are made which save security settings within the registry, if these registry keys can be tampered by a limited user it may impose threat. (e.g. data loss prevention, anti-virus, unwanted script blocking apps etc. prevent configuration alterations by using registry/group policies. If they have written configuration with weak permission, anyone with limited privilege role can easily bypass it)
+- Application or supporting services running on systems with higher privileges than required, such as root on *nix operating system and administrator on Windows operating system. If this service is compromised, an attacker directly gets full privilege access to the entire system.
+- Binary of the application with setuid/setgid permission for *nix.
+- Having an application directory with read/write access to low privileged users. For instance configuration files saved in public directories or configuration files with write access to other users (xx7) permissions on linux operating system or read-write-execute for everyone/non-admin in Windows. Similarly, executable files with write permission for low privileged users allows replacing legitimate files with malicious executable containing shellcode to perform privilege escalation. It might also happen that some sensitive information is saved within files and read permission instead of only admin, has been given to everyone.
+- Having Write access to registry values used by applications on Windows operating systems for low privileged users. Sometimes apps are made which save security settings within the registry, if these registry keys can be tampered by a limited user it may impose threat. (e.g. data loss prevention, anti-virus, unwanted script blocking apps etc. prevent configuration alterations by using registry/group policies. If they have written configuration with weak permission, anyone with limited privilege role can easily bypass it)
 
 
 
@@ -185,16 +185,14 @@ Improper authorization vulnerabilities will enable the attacker to escalate the 
 <br/><br/>
 # <a name="da6" > DA6 - Security Misconfiguration </a>
 ### Description:
-Flaws include misconfigured group policies / registry / firewall rules etc., missing file type/content check for file processing apps, misconfigured named-pipes, misconfigured supporting services used by the application, misconfigured third party services (SQL, AD, etc). An attacker can gain system access by exploiting these flaws.
+Flaws include misconfigured group policies / registry / firewall rules etc., missing file type/content check for file processing apps, misconfigured named-pipes, misconfigured supporting services used by the application, misconfigured third party services (SQL, AD, etc). An attacker can gain system access by exploiting these flaws. Security configuration issues spans across
 
-Security configuration issues spans across
-
-Application using misconfigured named-pipes for interprocess communication
-Application using background service misconfigured due to unquoted path in conjunction with weak folder permissions
-Applications using third-party services such as message queues, database services, etc. with default credentials, insecure access control, etc.
-Application having file upload features to support creation of entities but without file-type/content checking or applications which processes configuration files/data with misconfigured parsers, etc.
-Certain Windows applications rely on registry / group policies for security controls. However, there could be multiple misconfiguration chances, which leaves such applications vulnerable. For instance antivirus/Data loss prevention tools/device management tools etc., most cases they are restricted from uninstallation or tampering with configuration, despite having local admin users using group policies or registry. Since such exploitations are attempted by trusted insiders, hence an additional layer of security is required here to follow zero trust.
-Sometimes few apps are configured to serve API, web access, network shares, services, etc. only within the same machine, despite being connected over the network via firewall or source IP filtering rules etc. Misconfigurations in them expose such interfaces over the network and increase attack surface.
+- Application using misconfigured named-pipes for interprocess communication
+- Application using background service misconfigured due to unquoted path in conjunction with weak folder permissions
+- Applications using third-party services such as message queues, database services, etc. with default credentials, insecure access control, etc.
+- Application having file upload features to support creation of entities but without file-type/content checking or applications which processes configuration files/data with misconfigured parsers, etc.
+- Certain Windows applications rely on registry / group policies for security controls. However, there could be multiple misconfiguration chances, which leaves such applications vulnerable. For instance antivirus/Data loss prevention tools/device management tools etc., most cases they are restricted from uninstallation or tampering with configuration, despite having local admin users using group policies or registry. Since such exploitations are attempted by trusted insiders, hence an additional layer of security is required here to follow zero trust.
+- Sometimes few apps are configured to serve API, web access, network shares, services, etc. only within the same machine, despite being connected over the network via firewall or source IP filtering rules etc. Misconfigurations in them expose such interfaces over the network and increase attack surface.
 
  
 ### Exploitability Rational:
@@ -237,12 +235,12 @@ An attacker can retrieve user credentials, service credentials, communication st
 <br/><br/>
 # <a name="da8" > DA8 - Poor Code Quality </a>
 ### Description:
-Application build without following secure code practices. Issues such as but not limited to
-Presence of dead code or test data in release build
-Poor memory management
-Lack of binary protection
-Unobfuscated code
-Missing code signing and verification
+Application build without following secure code practices. Issues such as but not limited to:
+- Presence of dead code or test data in release build
+- Poor memory management
+- Lack of binary protection
+- Unobfuscated code
+- Missing code signing and verification
 
 
 ### Exploitability Rational:
@@ -268,12 +266,10 @@ An attacker can reverse engineer the application and can glean information about
 <br/><br/>
 # <a name="da9" > DA9 - Using Components with Known Vulnerabilities </a>
 ### Description:
-Either any component/service offered by the underlying OS or an external 3rd party component which had a publicly known vulnerability (with/without exploit available), will impose very high risk on the products/assets. As part of the product life cycle any such affected component would be complemented with a security patch or newer version of that component. Some of them are automated, where the end-user doesn’t have to bother about it, however sometimes manually patching is required due to various reasons.
-
-Third party components are the reusable software components generally used to save time and budget, while developing any product/solution. There are two categories of third party components.
-Open Source Components
+Either any component/service offered by the underlying OS or an external 3rd party component which had a publicly known vulnerability (with/without exploit available), will impose very high risk on the products/assets. As part of the product life cycle any such affected component would be complemented with a security patch or newer version of that component. Some of them are automated, where the end-user doesn’t have to bother about it, however sometimes manually patching is required due to various reasons. Third party components are the reusable software components generally used to save time and budget, while developing any product/solution. There are two categories of third party components:
+1. Open Source Components:
 	These components are maintained by the open source community and the release of updates/patches for the components may/may not be in a timely manner.
-Commercial Components
+2. Commercial Components:
 These components are maintained by the third party vendors and updates are frequently released based on the business model. Patches are released generally at a fixed interval of time or immediately for some critical issues.
 
 Using any of the above kinds of components can introduce new vulnerabilities and attack surfaces. It is necessary for the developers of the application to patch the discovered vulnerability in the open source components and use the latest/patched version of commercial components.
