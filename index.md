@@ -47,6 +47,7 @@ type: documentation
 | DA10 - Insufficient Logging & Monitoring | Missing or Improper Logging of Activities, Missing Regular Monitoring to Detect Abuse |
 
 
-
+<br/><br/>
 ## [OWASP Top 10 Desktop Application Security Risks | Detailed Description](tab_detailed_DesktopTop10.md/#t2)
 
+<br/>
