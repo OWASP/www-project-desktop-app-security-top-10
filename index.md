@@ -48,5 +48,5 @@ type: documentation
 
 
 
-# [OWASP Top 10 Desktop Application Security Risks | Detailed Description](tab_detailed_DesktopTop10.md/#t2)
+## [OWASP Top 10 Desktop Application Security Risks | Detailed Description](tab_detailed_DesktopTop10.md/#t2)
 
