@@ -1,3 +1,3 @@
 ### Leaders
-* [Kartik](mailto:desktoptop10@googlegroups.com)
-* [Anonymous](mailto:desktoptop10@googlegroups.com)
+* [Kartik](mailto:desktoptop10@gmail.com)
+* [Anonymous](mailto:desktoptop10@gmail.com)
