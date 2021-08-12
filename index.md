@@ -57,7 +57,7 @@ type: documentation
 
 # OWASP Top 10 Desktop Application Security Risks | Quick Reference Table
 
-
+<br>
 
 | OWASP Top 10 Desktop App | Examples |
 |---|---|
