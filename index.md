@@ -1,5 +1,4 @@
-<!--
----
+
 
 layout: col-sidebar
 title: OWASP Desktop App Security Top 10
@@ -8,7 +7,6 @@ level: 2
 type: 
 pitch: A very brief, one-line description of your project
 
----
 
 This is an example of a Project or Chapter Page.  Please change these items to indicate the actual information you wish to present.  In addition to this information, the 'front-matter' above this text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
 
@@ -22,7 +20,6 @@ level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Fla
 
 type: code, tool, documentation, or other
 
-->
 
 <!--
 ---
@@ -50,9 +47,6 @@ type: documentation
 
 ->
 
-<!--
-[DA1](#a)
--->
 
 
 a
