@@ -1,3 +1,4 @@
+<!--
 
 layout: col-sidebar
 title: OWASP Desktop App Security Top 10
@@ -6,7 +7,7 @@ level: 2
 type: 
 pitch: A very brief, one-line description of your project
 
-
+-->
 
 
 # OWASP Top 10 Desktop Application Security Risks | Quick Reference Table  
@@ -26,10 +27,10 @@ pitch: A very brief, one-line description of your project
 | DA9 - Using Components with Known Vulnerabilities | Usage of Outdated Softwares, or Usage of Obsolete Components/Services of Windows/3rd Party vendors |
 | DA10 - Insufficient Logging & Monitoring | Missing or Improper Logging of Activities, Missing Regular Monitoring to Detect Abuse |  
 
----
+
 <br/><br/>
 Note: These Top10 have been created keeping in mind Windows, *Nix platforms and using commonly available CVE, exploits, writeups.  
----
+
  
 ## [OWASP Top 10 Desktop Application Security Risks | Detailed Description](tab_detailed_DesktopTop10.md/#t2)
 
