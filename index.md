@@ -1,8 +1,8 @@
-<!--
+
 ---
 
 layout: col-sidebar
-title: OoWASP Desktop App Security Top 10
+title: OWASP Desktop App Security Top 10
 tags: example-tag
 level: 2
 type: 
@@ -22,7 +22,6 @@ level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Fla
 
 type: code, tool, documentation, or other
 
--->
 
 
 
