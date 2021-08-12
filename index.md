@@ -16,8 +16,6 @@
 | DA10 - Insufficient Logging & Monitoring | Missing or Improper Logging of Activities, Missing Regular Monitoring to Detect Abuse |  
 
 
-##
-Note: These Top10 have been created keeping in mind Windows, *Nix platforms and using commonly available CVE, exploits, writeups.  
 
  
 ## [OWASP Top 10 Desktop Application Security Risks | Detailed Description](tab_detailed_DesktopTop10.md/#t2)
