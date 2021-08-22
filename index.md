@@ -5,7 +5,7 @@ title: OWASP Desktop App Security Top 10
 tags: OWASP-Desktop-App-Security-Top-10
 level: 2
 type: documentation
-pitch: Desktop App Security top 10 documents vulnerabilities for all major platform derived from publicaly known exploits/CVEs etc.
+pitch: Desktop App Security top 10 documents vulnerabilities for all major platform derived from publicaly known exploits, CVEs etc.
 
 ---
 
