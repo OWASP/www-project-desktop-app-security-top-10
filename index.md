@@ -9,7 +9,7 @@ pitch: Desktop App Security top 10 documents vulnerabilities for all major platf
 
 ---
 
-
+a
 The OWASP Desktop App. Security Top 10 is a standard awareness document for developers, product owners and security engineers. It represents a broad consensus about the most critical security risks to Desktop applications.
 
 Globally recognized by developers as the first step towards more secure coding.
