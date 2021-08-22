@@ -35,7 +35,6 @@ Companies should adopt this document and start the process of ensuring that thei
 # OWASP Top 10 Desktop Application Security Risks | Quick Reference Table  
 
 
-
 | OWASP Top 10 Desktop App | Examples |
 |---|---|
 | DA1 - Injections | SQLi, LDAP, XML, OS Command, etc. |
@@ -49,3 +48,7 @@ Companies should adopt this document and start the process of ensuring that thei
 | DA9 - Using Components with Known Vulnerabilities | Usage of Outdated Softwares, or Usage of Obsolete Components/Services of Windows/3rd Party vendors |
 | DA10 - Insufficient Logging & Monitoring | Missing or Improper Logging of Activities, Missing Regular Monitoring to Detect Abuse |  
 
+
+Note: These Top10 have been created keeping in mind Windows, *Nix platforms and using commonly available CVE, exploits, writeups.
+
+## [OWASP Top 10 Desktop Application Security Risks | Detailed Description](tab_detailed_DesktopTop10.md/#div-example)
