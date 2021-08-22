@@ -1,11 +1,11 @@
 ---
 
 layout: col-sidebar
-title: OWASP Desktop App Security Top 10
+title: OWASP Desktop Application Security Top 10
 tags: example-tag
 level: 2
-type: 
-pitch: A very brief, one-line description of your project
+type: documentation
+pitch: Consists of vulnerabilities for all major desktop app platform, derived from publicaly known exploits, CVEs etc.
 
 ---
 
