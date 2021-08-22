@@ -23,6 +23,13 @@ type: code, tool, documentation, or other
 
 
 
+The OWASP Desktop App. Security Top 10 is a standard awareness document for developers, product owners and security engineers. It represents a broad consensus about the most critical security risks to Desktop applications.
+
+Globally recognized by developers as the first step towards more secure coding.
+
+Companies should adopt this document and start the process of ensuring that their desktop applications minimize these risks. Using the OWASP Top 10 is perhaps the most effective first step towards changing the software development culture within your organization into one that produces more secure code.
+
+
 
 
 # OWASP Top 10 Desktop Application Security Risks | Quick Reference Table  
@@ -42,13 +49,3 @@ type: code, tool, documentation, or other
 | DA9 - Using Components with Known Vulnerabilities | Usage of Outdated Softwares, or Usage of Obsolete Components/Services of Windows/3rd Party vendors |
 | DA10 - Insufficient Logging & Monitoring | Missing or Improper Logging of Activities, Missing Regular Monitoring to Detect Abuse |  
 
-
-
-
-
-
-The OWASP Desktop App. Security Top 10 is a standard awareness document for developers, product owners and security engineers. It represents a broad consensus about the most critical security risks to Desktop applications.
-
-Globally recognized by developers as the first step towards more secure coding.
-
-Companies should adopt this document and start the process of ensuring that their desktop applications minimize these risks. Using the OWASP Top 10 is perhaps the most effective first step towards changing the software development culture within your organization into one that produces more secure code.
