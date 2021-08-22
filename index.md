@@ -39,4 +39,4 @@ Companies should adopt this document and start the process of ensuring that thei
 Note: These Top10 have been created keeping in mind Windows, *Nix platforms and using commonly available CVE, exploits, writeups.
 
 
-## [OWASP Top 10 Desktop Application Security Risks | Detailed Description](https://owasp.org/www-project-desktop-app-security-top-10/#tab_example)
+## [OWASP Top 10 Desktop Application Security Risks | Detailed Description](https://owasp.org/www-project-desktop-app-security-top-10/#tab_detaileddescription)
