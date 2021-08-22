@@ -7,7 +7,7 @@ tags: example-tag
 ---
 
 
-# <a name="tab_detaileddescription" > </a>
+# <a name="div-detaileddescription" > </a>
 # OWASP Top 10 Desktop Application Security Risks
 <br/>
 
