@@ -1,5 +1,5 @@
 ---
-title: exampl
+title: DetailedDescription
 layout:  null
 tab: true
 order: 1
