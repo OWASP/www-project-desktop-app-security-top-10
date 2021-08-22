@@ -3,11 +3,11 @@ title: Detailed description
 layout:  null
 tab: true
 order: 1
-tags: example-tag
+tags: ThickClient-Top-10-Vulnerability&Risks
 ---
 
 
-# <a name="t2" > </a>
+# <a name="tab_desc" > </a>
 # OWASP Top 10 Desktop Application Security Risks
 <br/>
 
@@ -344,7 +344,7 @@ Logging allows us to track the operations performed within the context of the ap
 
 <br/><br/>
 
-## [OWASP Top 10 Desktop Application Security Risks | Quick Reference Table](index.md/#t1)
+## [OWASP Top 10 Desktop Application Security Risks | Quick Reference Table](index.md/#div-main)
 
 <br/>
 
