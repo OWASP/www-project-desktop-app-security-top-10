@@ -1,7 +1,7 @@
 ---
 
 layout: col-sidebar
-title: OWASP Desktop Application Security Top 10
+title: OWASP Desktop App Security Top 10
 tags: example-tag
 level: 2
 type: documentation
