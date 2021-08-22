@@ -3,7 +3,7 @@ title: Detailed Description
 layout:  null
 tab: true
 order: 1
-tags: example-tag
+tags: desc-tag
 ---
 
 ## Detailed Desc
