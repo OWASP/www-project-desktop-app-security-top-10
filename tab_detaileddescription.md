@@ -8,7 +8,7 @@ tags: example-tag
 
 
 # <a name="div-detaileddescription" > </a>
-# OWASP Top 10 Desktop Application Security Risks
+# OWASP Top 10 Desktop Application Security Risks (2021) | Detailed Description
 <br/>
 
 
@@ -344,7 +344,7 @@ Logging allows us to track the operations performed within the context of the ap
 
 <br/><br/>
 
-## [OWASP Top 10 Desktop Application Security Risks | Quick Reference Table](index.md/#div-main)
+## [OWASP Top 10 Desktop Application Security Risks | Quick Reference Table](#div-main)
 
 <br/>
 
