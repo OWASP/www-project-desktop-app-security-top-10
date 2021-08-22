@@ -5,4 +5,4 @@
 * [Builder](#)
 
 ### Code Repository
-* [repo: https://github.com/OWASP/www-project-desktop-app-security-top-10](#)
+* [GitRepo:](https://github.com/OWASP/www-project-desktop-app-security-top-10)
