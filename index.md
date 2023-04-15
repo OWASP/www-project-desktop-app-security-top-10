@@ -22,7 +22,7 @@ Companies should adopt this document and start the process of ensuring that thei
 
 
 
-| OWASP Top 10 Desktop App | Examples |
+| OWASP Top 10 Desktop App | Examples | 
 |---|---|
 | DA1 - Injections | SQLi, LDAP, XML, OS Command, etc. |
 | DA2 - Broken Authentication & Session Management | OS / DesktopApp account Authentication & Session Management, Auth. for Import / Export with external Drive, Auth. for Network Shared Drives or other Peripheral devices |
@@ -37,6 +37,5 @@ Companies should adopt this document and start the process of ensuring that thei
 
 
 Note: These Top10 have been created keeping in mind Windows, *Nix platforms and using commonly available CVE, exploits, writeups.
-
 
 
