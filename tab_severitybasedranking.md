@@ -32,5 +32,9 @@ Note: Let's call the Critical/High vulnerabilities with no prvilege requried and
 ![Graphical Representation](assets/images/ranking_chart.png)
 
 <br/>
-Note: This ranking is based on the data accumulated from CVEs by an automated process, having certain keywords and excluding certain keywords to assure tha the CVEs found are related to desktop applications.
+Note: 
+
+1. This ranking is based on the data accumulated from CVEs by an automated process, having certain keywords and excluding certain keywords to assure tha the CVEs found are related to desktop applications.
+2. Category 'DA9 - Using Components with Known Vulnerabilities' have zero matching CVEs in the above table, because all such vulnerabilities that include vulnerable components have their own CVEs assigned to them, that are matching to other categories.
+   
 The data accumated is of year 2023 till August 12th.
