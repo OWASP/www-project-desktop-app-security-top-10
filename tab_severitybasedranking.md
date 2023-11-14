@@ -1,5 +1,5 @@
 ---
-title: Ranking
+title: SeverityBasedRanking
 layout:  null
 tab: true
 order: 2
