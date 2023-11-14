@@ -16,13 +16,6 @@ There are many CVEs identified that do not require user interaction and any priv
 Note: Let's call the Critical/High vulnerabilities with no prvilege requried and no user interaction as 'OneClick'.
 
 
-| OWASP Top 10 Desktop App | Examples | a |
-|---|---|---|
-| DA1 - Injections | SQLi, LDAP, XML, OS Command, etc. | a |
-| DA2 - Broken Authentication & Session Management | OS / DesktopApp account Authentication & Session Management, Auth. for Import / Export with external Drive, Auth. for Network Shared Drives or other Peripheral devices | a |
-
-
-
 
 | Category | One Click | Critical | High | Medium | Low |
 |---|---|---|---|---|---|
