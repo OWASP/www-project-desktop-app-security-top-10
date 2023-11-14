@@ -29,7 +29,7 @@ Note: Let's call the Critical/High vulnerabilities with no prvilege requried and
 | DA9 - Using Components with Known Vulnerabilities | 0 | 0 | 0 | 0 | 0 |
 <br/>
 
-![Graphical Representation](assets/images/ranking_chart.png)
+![Graphical Representation](/blob/main/assets/images/ranking_chart.png)
 
 <br/>
 Note: 
