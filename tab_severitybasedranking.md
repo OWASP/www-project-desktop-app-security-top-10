@@ -13,7 +13,7 @@ tags: example-tag
 
 There are many CVEs identified that do not require user interaction and any privilege. Based on the number of CVEs found and severity of such issues, following is the ranking of OWASP Top 10 Desktop Application vulnerabilities.
 
-Note: Let's call the Critical/High vulnerabilities with no prvilege requried and minimal user interaction as 'OneClick'.
+Note: Let's call the Critical/High vulnerabilities with no privilege requried and minimal user interaction as 'OneClick'.
 
 
 
