@@ -1,0 +1,25 @@
+audience:
+  - builder
+leaders:
+  - name: Kartik Lalan
+    email: desktoptop10@gmail.com
+  - name: Siddharth Bezalwar
+    email: desktoptop10@gmail.com
+  - name: Mukund Kumar Kedia
+    email: mukundkedia3@outlook.com
+    github: banditMukund
+level: 2
+license:
+  - MIT
+name: OWASP Desktop App Security Top 10
+pitch: Consists of vulnerabilities for all major desktop app platform, derived from publicaly known exploits, CVEs etc.
+repositories:
+  - name: www-project-desktop-app-security-top-10
+    url: https://github.com/OWASP/www-project-desktop-app-security-top-10
+    description: OWASP Foundation Repository
+tags:
+  - example-tag
+  - custom-tag-1
+  - custom-tag-2
+type: documentation
+website: https://owasp.org/www-project-desktop-app-security-top-10
